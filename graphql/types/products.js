@@ -1,18 +1,16 @@
-import { gql } from 'apollo-server-micro'
-
+import { gql } from "apollo-server-micro";
 
 const productsTypes = gql`
-type Link{
-  id:String
-  title:String
-  description:String
-}
+  type Link {
+    id: String
+    title: String
+    description: String
+  }
 
-type Query {
-  links:[Link]!
-  link:Link
-}
+  type Query {
+    links: [Link]!
+    link: Link
+  }
+`;
 
-`
-
-export default productsTypes
+export default productsTypes;

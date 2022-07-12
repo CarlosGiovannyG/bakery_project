@@ -1,16 +1,26 @@
-import {gql} from 'apollo-server-micro'
-
+import { gql } from "apollo-server-micro";
 
 const usersTypes = gql`
-type User{
-  name:String
-}
+  type User {
+    name: String
+  }
 
+  input UserData {
+    email: String
+    password: String
+  }
 
-type Query{
-  oneUser:User
-}
+  type UserRegister {
+    message: String
+  }
 
-`
+  type Query {
+    oneUser: User
+  }
 
-export default usersTypes
+  type Mutation {
+    RegisterUsers(input: UserData): UserRegister
+  }
+`;
+
+export default usersTypes;

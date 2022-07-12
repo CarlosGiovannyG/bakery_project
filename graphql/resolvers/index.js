@@ -1,10 +1,7 @@
-import lodash from 'lodash'
-import productsResolvers from './products'
-import usersResolvers from './users'
+import lodash from "lodash";
+import productsResolvers from "./products";
+import usersResolvers from "./users";
 
-const resolvers = lodash.merge(
-productsResolvers,
-usersResolvers
-)
+const resolvers = lodash.merge(productsResolvers, usersResolvers);
 
-export default resolvers
+export default resolvers;

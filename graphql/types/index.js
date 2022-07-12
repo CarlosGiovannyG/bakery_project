@@ -1,10 +1,6 @@
 import productsTypes from "./products";
 import usersTypes from "./users";
 
-const typeDefs =[
-  productsTypes,
-  usersTypes
+const typeDefs = [productsTypes, usersTypes];
 
-]
-
-export default typeDefs
+export default typeDefs;

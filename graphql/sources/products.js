@@ -1,11 +1,9 @@
-import { RESTDataSource } from 'apollo-datasource-rest'
+import { RESTDataSource } from "apollo-datasource-rest";
 
 class ProductsApi extends RESTDataSource {
   constructor() {
-    super()
-
+    super();
   }
-
 }
 
-export default ProductsApi
+export default ProductsApi;

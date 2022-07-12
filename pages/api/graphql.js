@@ -9,8 +9,8 @@ const apolloServer = new ApolloServer({
   typeDefs,
   resolvers,
   context: ({ req }) => {},
-  dataSources:()=>({
-    UsersApi: new Apis.UsersApi()
+  dataSources: () => ({
+    UsersApi: new Apis.UsersApi(),
   }),
   introspection: true,
   playground: true,
